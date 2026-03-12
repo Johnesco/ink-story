@@ -1,0 +1,82 @@
+# Farmer's Heart — Walkthrough Guide
+# A branching Ink story with 7 endings.
+# Each path lists the choices to make in order.
+
+## The Farmer's Victory -- Best Ending
+# Save the valley and win your freedom. Romance with Abigail.
+> Head into town to introduce yourself
+> Talk to the woman with green hair
+> Invite her to see the farm
+> Tell her everything you know
+> Form a team with Abigail
+> Confess your deepening feelings to her
+> Together, prepare to defend the valley
+> Prepare to confront the Blight directly
+> Descend into the mines together
+> Immediately attempt the banishment ritual
+> Begin the restoration—return home
+
+## The Solitary Victor -- Solo Ending
+# Face the darkness alone and survive. No romance.
+> Start fixing up the farmhouse
+> Read the journal now
+> Seek out the town's elder
+> Ask to hear the full history
+> Ask how to fight the Blight
+> Declare you'll fight it alone if necessary
+> Still insist on facing it alone
+> Perform the banishment ritual
+> Discover your fate
+
+## The Guardian's Farm -- Good Ending
+# Accept the guardian role. Darkness is contained, not destroyed.
+> Explore the farm first
+> Open the chest immediately
+> Wear the necklace immediately
+> Use your new senses to explore the farm
+> Go directly to the mines to investigate
+> Try to repair the seal immediately
+> Complete the restoration and return home
+> Build a life knowing the darkness will return
+
+## The Eternal Guardian -- Bittersweet Ending
+# Banish the Blight at great personal cost. Always vigilant.
+> Explore the farm first
+> Open the chest immediately
+> Wear the necklace immediately
+> Use your new senses to explore the farm
+> Go directly to the mines to investigate
+> Try to repair the seal immediately
+> Push further and try to permanently banish the Blight
+> Accept your role as eternal guardian
+
+## The Farmer's Sacrifice -- Heroic Ending
+# Die saving everyone. Romance with Sebastian.
+> Head into town to introduce yourself
+> Talk to the serious-looking man
+> Ask him what's troubling him
+> Admit you sense something is wrong too
+> Ask him to be your partner in this fight
+> Together, prepare for the battles ahead
+> Prepare to confront the Blight directly
+> Descend into the mines together
+> Confront the entity directly
+> Sacrifice yourself to destroy it
+
+## The Sealed Champion -- Tragic Ending
+# Trap yourself with the Blight forever.
+> Explore the farm first
+> Open the chest immediately
+> Wear the necklace immediately
+> Use your new senses to explore the farm
+> Go directly to the mines to investigate
+> Confront the entity behind the seal
+> Try to bargain with it
+> Seal yourself in with the Blight to trap it here
+
+## A Quiet Life -- Peaceful Ending
+# Ignore the quest. Simple farm life.
+> Start fixing up the farmhouse
+> Read the journal now
+> Dismiss it as the ramblings of an eccentric old man
+> Continue your peaceful farming life

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(which inklecate:*)",
+      "Bash(npm list:*)",
+      "Bash(npx inklecate:*)",
+      "Bash(python3 -c \"import json; data = json.load\\(open\\('farmers_heart.json', encoding='utf-8-sig'\\)\\); print\\('Valid JSON, inkVersion:', data['inkVersion']\\)\")",
+      "Bash(sleep 2 && curl -s http://127.0.0.1:5000/ | head -5)",
+      "Bash(cd /c/code/ifhub && python tools/dashboard.py --port 5000)",
+      "Bash(sleep 3 && curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:5000/)",
+      "Bash(curl -s http://127.0.0.1:5000/ | grep -i 'publish\\\\|push\\\\|deploy\\\\|update\\\\|btn-' | head -30)",
+      "Bash(curl -s http://127.0.0.1:5000/api/projects | python3 -c \"\nimport json, sys\ndata = json.load\\(sys.stdin\\)\nfor p in data:\n    if 'ink' in p['name']:\n        print\\(json.dumps\\(p, indent=2\\)\\)\n\")"
+    ]
+  }
+}

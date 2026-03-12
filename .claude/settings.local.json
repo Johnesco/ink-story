@@ -9,7 +9,17 @@
       "Bash(cd /c/code/ifhub && python tools/dashboard.py --port 5000)",
       "Bash(sleep 3 && curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:5000/)",
       "Bash(curl -s http://127.0.0.1:5000/ | grep -i 'publish\\\\|push\\\\|deploy\\\\|update\\\\|btn-' | head -30)",
-      "Bash(curl -s http://127.0.0.1:5000/api/projects | python3 -c \"\nimport json, sys\ndata = json.load\\(sys.stdin\\)\nfor p in data:\n    if 'ink' in p['name']:\n        print\\(json.dumps\\(p, indent=2\\)\\)\n\")"
+      "Bash(curl -s http://127.0.0.1:5000/api/projects | python3 -c \"\nimport json, sys\ndata = json.load\\(sys.stdin\\)\nfor p in data:\n    if 'ink' in p['name']:\n        print\\(json.dumps\\(p, indent=2\\)\\)\n\")",
+      "Bash(sleep 3 && curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8000/ifhub/)",
+      "Bash(python /c/code/ifhub/tools/dev-server.py --port 8000)",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/inkjs@2.2.2/dist/ink.min.js\" 2>&1 | head -5)",
+      "Bash(python3 -c \"\nimport json\nwith open\\('C:/code/ifhub/projects/ink-story/play.html', 'r'\\) as f:\n    content = f.read\\(\\)\nstart = content.index\\('var storyContent = '\\) + len\\('var storyContent = '\\)\ndepth = 0\ni = start\nwhile i < len\\(content\\):\n    if content[i] == '{': depth += 1\n    elif content[i] == '}': \n        depth -= 1\n        if depth == 0:\n            end = i + 1\n            break\n    i += 1\njson_str = content[start:end]\ntry:\n    data = json.loads\\(json_str\\)\n    print\\(f'Valid JSON, inkVersion={data.get\\(\\\\\"inkVersion\\\\\"\\)}'\\)\nexcept json.JSONDecodeError as e:\n    print\\(f'INVALID JSON: {e}'\\)\n\")",
+      "Bash(python3 -c \"\nimport json\nwith open\\('C:/code/ifhub/projects/ink-story/farmers_heart.json', 'r'\\) as f:\n    data = json.load\\(f\\)\nprint\\(f'Valid JSON, inkVersion={data.get\\(\\\\\"inkVersion\\\\\"\\)}'\\)\nprint\\(f'Keys: {list\\(data.keys\\(\\)\\)}'\\)\n\")",
+      "Bash(python3 -c \"\nwith open\\('C:/code/ifhub/projects/ink-story/farmers_heart.json', 'rb'\\) as f:\n    data = f.read\\(20\\)\nprint\\(repr\\(data\\)\\)\nprint\\(f'File size: {len\\(open\\(\\\\\"C:/code/ifhub/projects/ink-story/farmers_heart.json\\\\\", \\\\\"rb\\\\\"\\).read\\(\\)\\)} bytes'\\)\n\")",
+      "Bash(python3 << 'EOF'\nimport json\nwith open\\('/c/code/ifhub/ifhub/games.json', 'r'\\) as f:\n    games = json.load\\(f\\)\n    for g in games:\n        if 'ink' in g['id'].lower\\(\\):\n            print\\(json.dumps\\(g, indent=2\\)\\)\nEOF)",
+      "Bash(python /c/code/ifhub/tools/web/setup_ink.py --title \"Farmer's Heart\" --ink /c/code/ifhub/projects/ink-story/farmers_heart.ink --out /c/code/ifhub/projects/ink-story --force 2>&1)",
+      "Bash(curl -s http://127.0.0.1:8000/ink-story/play.html | head -c 200)",
+      "Bash(python /c/code/ifhub/tools/publish.py ink-story 2>&1)"
     ]
   }
 }

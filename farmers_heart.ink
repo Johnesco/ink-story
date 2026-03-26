@@ -50,6 +50,10 @@ The town square is charming, with a general store, tavern, and community center.
 * [Talk to the musician]
     -> meet_elliott_09
 
++ {met_abigail || met_sebastian || met_elliott} [Head back to the farm]
+    You've met enough people for now. Time to focus on the farm.
+    -> dead_patch_25
+
 === farmhouse_04 ===
 You spend hours sweeping out decades of dust and cobwebs. By noon, you're exhausted but the farmhouse is livable. As you sit down for a well-deserved rest, you notice a journal on the shelf—your grandfather's journal. Do you read it?
 
